@@ -50,5 +50,5 @@ make
 # Run 'make clean' before building for another target system.
 ```
 
-The library will be output to `\path\to\libdvdcss\.libs\libdvdcss-2.dll`.
+`libdvdcss-2.dll` will be output to `\path\to\libdvdcss\.libs\libdvdcss-2.dll`.
 
