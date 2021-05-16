@@ -62,14 +62,18 @@ touch aclocal.m4 Makefile.am Makefile.in
 
 ## Bundling a release
 
+```sh
+cp -R <version>/ dist/libdvdss-dll-<version>
+```
+
 Create a `.tar.gz` archive:
 
 ```sh
-tar -czf libdvdcss-dll-<version>.tar.gz libdvdcss-dll-<version>/
+tar -czf dist/libdvdcss-dll-<version>.tar.gz dist/libdvdcss-dll-<version>/
 ```
 
 Create a `zip` archive:
 
 ```sh
-zip -r libdvdcss-dll-<version>.zip libdvdcss-dll-<version>/
+zip -r dist/libdvdcss-dll-<version>.zip dist/libdvdcss-dll-<version>/
 ```
