@@ -15,7 +15,13 @@ folder to convert your DVDs to mp4 files.
 * Move `libdvdcss-2.dll` into the Handbrake installation folder (usually `C:\Program Files\HandBrake`).
 * Enjoy ripping your DVDs. Please use responsibly.
 
-## Compile libdvdcss yourself
+## Compile libdvdcss yourself (for versions 1.5.0 and later)
+
+* Download the source code from the repository [here](https://code.videolan.org/videolan/libdvdcss).
+* Follow the instructions in the `INSTALL` file for Windows.
+  * You will need to install `meson` and `mingw-w64`
+
+## Compile libdvdcss yourself (for versions 1.4.3 and earlier)
 
 **Either Linux, macOS, or Windows 10 is required.**
 
@@ -63,17 +69,20 @@ touch aclocal.m4 Makefile.am Makefile.in
 ## Bundling a release
 
 ```sh
+mkdir dist/libdvdss-dll-<version>
 cp -R <version>/ dist/libdvdss-dll-<version>
 ```
 
 Create a `.tar.gz` archive:
 
 ```sh
-tar -czf dist/libdvdcss-dll-<version>.tar.gz dist/libdvdcss-dll-<version>/
+cd dist
+tar -czf libdvdcss-dll-<version>.tar.gz libdvdcss-dll-<version>/
 ```
 
 Create a `zip` archive:
 
 ```sh
-zip -r dist/libdvdcss-dll-<version>.zip dist/libdvdcss-dll-<version>/
+cd dist
+zip -r libdvdcss-dll-<version>.zip libdvdcss-dll-<version>/
 ```
