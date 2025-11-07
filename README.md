@@ -21,6 +21,20 @@ folder to convert your DVDs to mp4 files.
 * Follow the instructions in the `INSTALL` file for Windows.
   * You will need to install `meson` and `mingw-w64`
 
+The `INSTALL` file has a typo when compiling the 64-bit library:
+
+```shell
+# 32-bit
+meson setup build-w32 --cross-file package/crossfiles/i686-w64-mingw32.meson
+cd build-w32
+ninja
+
+# 64-bit
+meson setup build-w64 --cross-file package/crossfiles/x86_64-w64-mingw32.meson
+cd build-w64
+ninja
+```
+
 ## Compile libdvdcss yourself (for versions 1.4.3 and earlier)
 
 **Either Linux, macOS, or Windows 10 is required.**
