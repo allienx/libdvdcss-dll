@@ -23,9 +23,9 @@ README.md                          # user instructions + build notes
 
 ## Adding a new version
 
-For meson-based releases (1.5.0+), `.claude/skills/new-release/scripts/build.sh <version>`
+For meson-based releases (1.5.0+), `.claude/skills/libdvdcss-new-release/scripts/build.sh <version>`
 automates steps 1–4 and bundles the `dist/` archives; see
-`.claude/skills/new-release/SKILL.md` for the full release flow.
+`.claude/skills/libdvdcss-new-release/SKILL.md` for the full release flow.
 
 1. Build both architectures following the README section for that version
    (meson + mingw-w64 for 1.5.0+, autotools `./configure --host=...` for
