@@ -83,8 +83,8 @@ touch aclocal.m4 Makefile.am Makefile.in
 ## Bundling a release
 
 ```sh
-mkdir dist/libdvdss-dll-<version>
-cp -R <version>/ dist/libdvdss-dll-<version>
+mkdir dist/libdvdcss-dll-<version>
+cp -R <version>/ dist/libdvdcss-dll-<version>
 ```
 
 Create a `.tar.gz` archive:
